@@ -11,6 +11,8 @@ public class DynamicAuthenticationSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Lendon gwapo");
+        System.out.println("Gwapo kaau");
         System.out.println("Welcome to the Student Registration System");
         while (true) {
             System.out.println("\n[1] Login");
