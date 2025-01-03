@@ -7,12 +7,11 @@ public class DynamicAuthenticationSystem {
     private static ArrayList<String> usernames = new ArrayList<>();
     private static ArrayList<String> passwords = new ArrayList<>();
     private static ArrayList<String> roles = new ArrayList<>();
+    private static ArrayList<User> records = new ArrayList<>();
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Lendon gwapo");
-        System.out.println("Gwapo kaau");
         System.out.println("Welcome to the Student Registration System");
         while (true) {
             System.out.println("\n[1] Login");
@@ -93,7 +92,6 @@ public class DynamicAuthenticationSystem {
 
     private static void showAdminMenu() {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<User> users = new ArrayList<>();
 
         while (true) {
             
@@ -117,7 +115,7 @@ public class DynamicAuthenticationSystem {
                             scanner.nextLine();
 
                             boolean idExists = false;
-                            for (User user : users) {
+                            for (User user : records) {
                                 if (user.idNo == idNo) {
                                     idExists = true;
                                     break;
@@ -135,7 +133,7 @@ public class DynamicAuthenticationSystem {
                                 String lastName = scanner.nextLine();
 
                                 boolean NameExists = false;
-                                    for (User user : users) {
+                                    for (User user : records) {
                                         if (user.firstName.equals(firstName) && user.middleName.equals(middleName) && user.lastName.equals(lastName)) {
                                             NameExists = true;
                                             break;
@@ -147,7 +145,7 @@ public class DynamicAuthenticationSystem {
                                         System.out.print("Enter Course     : ");
                                         String course = scanner.nextLine();
 
-                                        users.add(new User(idNo, firstName, middleName, lastName, course));
+                                        records.add(new User(idNo, firstName, middleName, lastName, course));
                                         System.out.println("Record added successfully!\n");
                                         }
                             }
@@ -164,7 +162,7 @@ public class DynamicAuthenticationSystem {
 
                             boolean foundUpdate = false;
 
-                            for (User user : users) {
+                            for (User user : records) {
                                 if (user.idNo == updateId) {
                                     foundUpdate = true;
                                     System.out.println("Record found. Select the attribute to update:");
@@ -229,7 +227,7 @@ public class DynamicAuthenticationSystem {
                             scanner.nextLine();  // consume the newline
                             boolean foundSearch = false;
 
-                            for (User user : users) {
+                            for (User user : records) {
                                 if (user.idNo == searchId) {
                                     System.out.println("Record Found:");
                                     System.out.println(user);
@@ -253,9 +251,9 @@ public class DynamicAuthenticationSystem {
                             scanner.nextLine();  // consume the newline
                             boolean foundDelete = false;
 
-                            for (User user : users) {
+                            for (User user : records) {
                                 if (user.idNo == deleteId) {
-                                    users.remove(user);
+                                    records.remove(user);
                                     System.out.println("Record deleted successfully!\n");
                                     foundDelete = true;
                                     break;
@@ -273,10 +271,10 @@ public class DynamicAuthenticationSystem {
                     case 5:
                         try {
                             System.out.println("\nAll Records:");
-                            if (users.isEmpty()) {
+                            if (records.isEmpty()) {
                                 System.out.println("No records available.\n");
                             } else {
-                                for (User user : users) {
+                                for (User user : records) {
                                     System.out.println(user);
                                 }
                             }
@@ -287,7 +285,6 @@ public class DynamicAuthenticationSystem {
 
                     case 6:
                         System.out.println("Exiting the application. Goodbye!");
-                        scanner.close();
                         return;
 
                     default:
@@ -304,68 +301,67 @@ public class DynamicAuthenticationSystem {
 
     private static void showUserMenu() {
         Scanner input2 = new Scanner(System.in);
-        ArrayList <User> arr = new ArrayList<>();
 
-        System.out.println("\nUser Menu:");
-        System.out.println("[1] Search Record");
-        System.out.println("[2] View All Records");
-        System.out.println("[3] Logout");
+        while (true){
+            System.out.println("\nUser Menu:");
+            System.out.println("[1] Search Record");
+            System.out.println("[2] View All Records");
+            System.out.println("[3] Logout");
 
-        try {
-            System.out.print("Enter your choice: ");
-            int choice = Integer.parseInt(input2.nextLine());
+            try {
+                System.out.print("Enter your choice: ");
+                int choice = Integer.parseInt(input2.nextLine());
 
-            switch (choice) {
-                case 1:
-                    try {
-                        System.out.print("\nEnter ID No to search: ");
-                        int searchId = input2.nextInt();
-                        input2.nextLine();
-                        boolean foundSearch = false;
+                switch (choice) {
+                    case 1:
+                        try {
+                            System.out.print("\nEnter ID No to search: ");
+                            int searchId = input2.nextInt();
+                            input2.nextLine();
+                            boolean foundSearch = false;
 
-                        for (User user : arr) {
-                            if (user.idNo == searchId) {
-                                System.out.println("Record Found:");
-                                System.out.println(user);
-                                foundSearch = true;
-                                break;
+                            for (User user : records) {
+                                if (user.idNo == searchId) {
+                                    System.out.println("Record Found:");
+                                    System.out.println(user);
+                                    foundSearch = true;
+                                    break;
+                                }
                             }
-                        }
 
-                        if (!foundSearch) {
-                            System.out.println("Record not found!\n");
-                        }
-                    } catch (Exception e) {
-                        System.out.println("Error while searching record: " + e.getMessage() + "\n");
-                    } finally {
-                        System.out.println("Search operation completed.\n");
-                    }
-                    break;
-                case 2:
-                    try {
-                        System.out.println("\nAll Records:");
-                        if (arr.isEmpty()) {
-                            System.out.println("No records available.\n");
-                        } else {
-                            for (User user : arr) {
-                                System.out.println(user);
+                            if (!foundSearch) {
+                                System.out.println("Record not found!\n");
                             }
+                        } catch (Exception e) {
+                            System.out.println("Error while searching record: " + e.getMessage() + "\n");
+                        } finally {
+                            System.out.println("Search operation completed.\n");
                         }
-                    } catch (Exception e) {
-                        System.out.println("Error while displaying records: " + e.getMessage() + "\n");
-                    }
-                    break;
-                case 3:
-                    System.out.println("Exiting the application. Goodbye!");
-                    input2.close();
-                    return;
+                        break;
+                    case 2:
+                        try {
+                            System.out.println("\nAll Records:");
+                            if (records.isEmpty()) {
+                                System.out.println("No records available.\n");
+                            } else {
+                                for (User user : records) {
+                                    System.out.println(user);
+                                }
+                            }
+                        } catch (Exception e) {
+                            System.out.println("Error while displaying records: " + e.getMessage() + "\n");
+                        }
+                        break;
+                    case 3:
+                        System.out.println("Exiting the application. Goodbye!");
+                        return;
 
-                default:
-                    System.out.println("Invalid choice! Please try again.\n");
+                    default:
+                        System.out.println("Invalid choice! Please try again.\n");
+                }
+            } catch (Exception e) {
+                System.out.println("An unexpected error occurred: " + e.getMessage() + "\n");
             }
-        } catch (Exception e) {
-            System.out.println("An unexpected error occurred: " + e.getMessage() + "\n");
         }
-        input2.close();
     }
 }
