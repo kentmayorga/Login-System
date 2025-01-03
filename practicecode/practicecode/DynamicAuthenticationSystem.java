@@ -160,7 +160,8 @@ public class DynamicAuthenticationSystem {
                         try {
                             System.out.print("\nEnter ID No to update: ");
                             int updateId = scanner.nextInt();
-                            scanner.nextLine();  // consume the newline
+                            scanner.nextLine();  // consume the newline false;
+
                             boolean foundUpdate = false;
 
                             for (User user : users) {
@@ -302,10 +303,69 @@ public class DynamicAuthenticationSystem {
     }
 
     private static void showUserMenu() {
+        Scanner input2 = new Scanner(System.in);
+        ArrayList <User> arr = new ArrayList<>();
+
         System.out.println("\nUser Menu:");
         System.out.println("[1] Search Record");
         System.out.println("[2] View All Records");
         System.out.println("[3] Logout");
 
+        try {
+            System.out.print("Enter your choice: ");
+            int choice = Integer.parseInt(input2.nextLine());
+
+            switch (choice) {
+                case 1:
+                    try {
+                        System.out.print("\nEnter ID No to search: ");
+                        int searchId = input2.nextInt();
+                        input2.nextLine();
+                        boolean foundSearch = false;
+
+                        for (User user : arr) {
+                            if (user.idNo == searchId) {
+                                System.out.println("Record Found:");
+                                System.out.println(user);
+                                foundSearch = true;
+                                break;
+                            }
+                        }
+
+                        if (!foundSearch) {
+                            System.out.println("Record not found!\n");
+                        }
+                    } catch (Exception e) {
+                        System.out.println("Error while searching record: " + e.getMessage() + "\n");
+                    } finally {
+                        System.out.println("Search operation completed.\n");
+                    }
+                    break;
+                case 2:
+                    try {
+                        System.out.println("\nAll Records:");
+                        if (arr.isEmpty()) {
+                            System.out.println("No records available.\n");
+                        } else {
+                            for (User user : arr) {
+                                System.out.println(user);
+                            }
+                        }
+                    } catch (Exception e) {
+                        System.out.println("Error while displaying records: " + e.getMessage() + "\n");
+                    }
+                    break;
+                case 3:
+                    System.out.println("Exiting the application. Goodbye!");
+                    input2.close();
+                    return;
+
+                default:
+                    System.out.println("Invalid choice! Please try again.\n");
+            }
+        } catch (Exception e) {
+            System.out.println("An unexpected error occurred: " + e.getMessage() + "\n");
+        }
+        input2.close();
     }
 }
