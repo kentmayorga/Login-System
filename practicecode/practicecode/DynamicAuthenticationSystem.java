@@ -4,6 +4,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DynamicAuthenticationSystem {
+    public static final String RESET = "\u001B[0m"; 
+    public static final String BOLD = "\u001B[1m";
+    public static final String RED = "\u001B[31m";
+    public static final String GREEN = "\u001B[32m";
+    public static final String YELLOW = "\u001B[33m";
+    public static final String BLUE = "\u001B[34m";
+
+
     private static ArrayList<String> usernames = new ArrayList<>();
     private static ArrayList<String> passwords = new ArrayList<>();
     private static ArrayList<String> roles = new ArrayList<>();
@@ -268,21 +276,44 @@ public class DynamicAuthenticationSystem {
                         }
                         break;
 
-                    case 5:
+                        case 5:
                         try {
                             System.out.println("\nAll Records:");
+                            System.out.println();
+                                               
                             if (records.isEmpty()) {
                                 System.out.println("No records available.\n");
                             } else {
-                                for (User user : records) {
-                                    System.out.println(user);
+                                System.out.printf(GREEN +"ID No       :" + RESET);
+                                    for (User user : records) {
+                                        System.out.printf("%-20d" , user.idNo);
                                 }
+                                System.out.println();
+                                System.out.printf(GREEN +"First Name  :" + RESET);
+                                for (User user : records) {
+                                    System.out.printf("%-20s", user.firstName);
+                                }
+                                System.out.println();
+                                System.out.printf(GREEN +"Middle Name :" + RESET);
+                                for (User user : records) {
+                                    System.out.printf("%-20s", user.middleName);
+                                }
+                                System.out.println();
+                                System.out.printf(GREEN +"Last Name   :" + RESET);
+                                for (User user : records) {
+                                    System.out.printf("%-20s", user.lastName);
+                                }
+                                System.out.println();                    
+                                System.out.printf(GREEN +"Course      :" + RESET);
+                                for (User user : records) {
+                                    System.out.printf("%-20s", user.course);
+                                }
+                                System.out.println();
                             }
                         } catch (Exception e) {
                             System.out.println("Error while displaying records: " + e.getMessage() + "\n");
                         }
                         break;
-
                     case 6:
                         System.out.println("Exiting the application. Goodbye!");
                         return;
@@ -341,12 +372,36 @@ public class DynamicAuthenticationSystem {
                     case 2:
                         try {
                             System.out.println("\nAll Records:");
+                            System.out.println();
+                                               
                             if (records.isEmpty()) {
                                 System.out.println("No records available.\n");
                             } else {
-                                for (User user : records) {
-                                    System.out.println(user);
+                                System.out.printf(GREEN +"ID No       :" + RESET);
+                                    for (User user : records) {
+                                        System.out.printf("%-20d" , user.idNo);
                                 }
+                                System.out.println();
+                                System.out.printf(GREEN +"First Name  :" + RESET);
+                                for (User user : records) {
+                                    System.out.printf("%-20s", user.firstName);
+                                }
+                                System.out.println();
+                                System.out.printf(GREEN +"Middle Name :" + RESET);
+                                for (User user : records) {
+                                    System.out.printf("%-20s", user.middleName);
+                                }
+                                System.out.println();
+                                System.out.printf(GREEN +"Last Name   :" + RESET);
+                                for (User user : records) {
+                                    System.out.printf("%-20s", user.lastName);
+                                }
+                                System.out.println();                    
+                                System.out.printf(GREEN +"Course      :" + RESET);
+                                for (User user : records) {
+                                    System.out.printf("%-20s", user.course);
+                                }
+                                System.out.println();
                             }
                         } catch (Exception e) {
                             System.out.println("Error while displaying records: " + e.getMessage() + "\n");

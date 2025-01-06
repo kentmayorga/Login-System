@@ -14,13 +14,4 @@ public class User {
         this.lastName = lastName;
         this.course = course;
     }
-
-    @Override
-    public String toString() {
-        return "ID No        : " + idNo +
-               "\nFirst Name : " + firstName +
-               "\nMiddle Name: " + middleName +
-               "\nLast Name  : " + lastName +
-               "\nCourse     : " + course + "\n";
-    }
 }
