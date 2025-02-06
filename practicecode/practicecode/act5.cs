@@ -36,7 +36,7 @@ class HelloWorld {
         
         Console.WriteLine("Welcome to the Simple Payment System");
         Console.WriteLine("User: Kent P. Mayorga");
-        
+        Console.WriteLine("--------------------------------------");
         Console.WriteLine("Menu Options");
         Console.WriteLine("1: Make a Payment(Call by value)");
         Console.WriteLine("2: Apply discount(Call by reference)");
