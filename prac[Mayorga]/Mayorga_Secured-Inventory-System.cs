@@ -1,6 +1,6 @@
 ﻿using System;
 
-class HelloWorld {
+class Secured_Invetory_System {
   static void Main() {
     string[,] users = {{"admin", "admin123"}, {"manager", "manager123"}};
     string[,] products = {{"Apples", "Milk" , "Bread"},
