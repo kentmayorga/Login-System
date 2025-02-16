@@ -1,0 +1,15 @@
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\obj\Debug\net8.0\prac[Mayorga].GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\obj\Debug\net8.0\prac[Mayorga].AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\obj\Debug\net8.0\prac[Mayorga].AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\obj\Debug\net8.0\prac[Mayorga].csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\obj\Debug\net8.0\prac[Mayorga].sourcelink.json
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\bin\Debug\net8.0\prac[Mayorga].exe
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\bin\Debug\net8.0\prac[Mayorga].deps.json
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\bin\Debug\net8.0\prac[Mayorga].runtimeconfig.json
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\bin\Debug\net8.0\prac[Mayorga].dll
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\bin\Debug\net8.0\prac[Mayorga].pdb
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\obj\Debug\net8.0\prac[Mayorga].dll
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\obj\Debug\net8.0\refint\prac[Mayorga].dll
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\obj\Debug\net8.0\prac[Mayorga].pdb
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\obj\Debug\net8.0\prac[Mayorga].genruntimeconfig.cache
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\obj\Debug\net8.0\ref\prac[Mayorga].dll
