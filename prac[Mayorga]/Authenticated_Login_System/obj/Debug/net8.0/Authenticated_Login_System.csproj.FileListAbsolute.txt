@@ -1,0 +1,15 @@
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\Authenticated_Login_System\bin\Debug\net8.0\Authenticated_Login_System.exe
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\Authenticated_Login_System\bin\Debug\net8.0\Authenticated_Login_System.deps.json
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\Authenticated_Login_System\bin\Debug\net8.0\Authenticated_Login_System.runtimeconfig.json
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\Authenticated_Login_System\bin\Debug\net8.0\Authenticated_Login_System.dll
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\Authenticated_Login_System\bin\Debug\net8.0\Authenticated_Login_System.pdb
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\Authenticated_Login_System\obj\Debug\net8.0\Authenticated_Login_System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\Authenticated_Login_System\obj\Debug\net8.0\Authenticated_Login_System.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\Authenticated_Login_System\obj\Debug\net8.0\Authenticated_Login_System.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\Authenticated_Login_System\obj\Debug\net8.0\Authenticated_Login_System.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\Authenticated_Login_System\obj\Debug\net8.0\Authenticated_Login_System.sourcelink.json
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\Authenticated_Login_System\obj\Debug\net8.0\Authenticated_Login_System.dll
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\Authenticated_Login_System\obj\Debug\net8.0\refint\Authenticated_Login_System.dll
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\Authenticated_Login_System\obj\Debug\net8.0\Authenticated_Login_System.pdb
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\Authenticated_Login_System\obj\Debug\net8.0\Authenticated_Login_System.genruntimeconfig.cache
+C:\Users\HP\OneDrive\Desktop\kent trials\C#\Projects\Login-System\prac[Mayorga]\Authenticated_Login_System\obj\Debug\net8.0\ref\Authenticated_Login_System.dll
